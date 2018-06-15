@@ -66,7 +66,40 @@ public void speak()
 {
 System.out.println("I am a cat");
 }
+}  
+
+Q3.overload print function to accept Null arguments , one integer, one float.
+
+program 
+	package overloading;
+
+public class Overloading {
+    public void display(){
+    System.out.println("gupta");
+    }
+    public void display(int a){
+        System.out.println("a"+a);
+    }
+    public void display(float b){
+        System.out.println("b"+b);
+        
+    }    
+
+
+    public static void main(String[] args) {
+        int a=1;
+        float b=3f;
+        Overloading overload=new Overloading();
+        overload.display();
+                overload.display(a);
+                overload.display(b);
+    }
+    
 }
+
+
+
+
 
 
 Q4. Print length of longest increasing sub array.
