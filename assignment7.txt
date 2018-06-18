@@ -1,0 +1,128 @@
+Q1. Write a Java program to reverse a String.
+program:-
+package reverse.s;
+
+public class ReverseS {
+
+    public static void main(String[] args) {
+        String str="abcd";
+        String rev="";
+        for(int i=str.length()-1;i>=0;i--){
+            char y=str.charAt(i);
+            rev=rev+y;
+            
+        }
+        System.out.println("reverse string:"+rev);
+        
+    }
+     }
+Q2. Write a Java program to generate all substrings of the string xyz.
+program:-
+package sub2;
+
+public class Sub2 {
+    public static void SubString(String str, int n)
+    {
+        for(int i=0;i<n;i++)
+        for(int j=i+1;j<=n;j++)
+            System.out.println(str.substring(i,j));
+    }      
+            
+            
+
+     public static void main(String[] args) {
+         String str="xyz";
+         SubString(str, str.length());
+       
+    }
+    
+}
+Q3. Write a Java program to remove all vowels from the String.
+program:-
+	package stringvowel;
+
+public class Stringvowel {
+
+    public static void main(String[] args) {
+   int i;
+   String str1="gupta";
+   String str=str1.replaceAll("[aeiouAEIOU]", "");
+   System.out.println(str);
+    
+}}
+ 
+Q4. Write a Java program to print the following pattern :
+a 
+ab 
+abc 
+program:-
+	package allpattern;
+
+public class Allpattern {
+
+    public static void main(String[] args) {
+        int a;
+        int b;
+        for(a=1;a<=3;a++){
+            char ch=97;
+            for(b=1;b<=a;b++)
+            {
+                System.out.print(ch);
+                ch++;
+            }
+            System.out.println();
+        }
+    }
+    
+}
+
+Q5. Write a Java program to check occurrence of a string in another string, where both strings are taken as input from the user.
+program:-
+	public class OccurrenceS {
+ public static void main(String[] args) {
+  Scanner num=new Scanner(System.in);
+  System.out.println("enter the first string is:");
+   String s1=num.next();
+   Scanner ab=new Scanner(System.in);
+  System.out.println("enter the second string is:");
+   String s2=num.next();
+  if(s1.equals(s2)){
+      System.out.println("the occurance of string");
+  }
+  else{
+      System.out.println("the occurence of string is not");
+      
+      
+  }
+   
+   
+}
+}
+Q6.Write a Java program to count the number of words in a sentence taken as input.
+program:-
+	package countword.s;
+
+public class CountwordS {
+
+    
+    public static void main(String[] args) {
+        String str="my name is umashankar";
+        System.out.println("The Sentence is:"+str);
+        int count=1;
+        for(int i=0;i<=str.length()-1;i++){
+                        if (str.charAt(i) == ' ' && str.charAt(i+1)!=' ')
+            {
+                count++;
+            }
+           }
+        System.out.println("the number of word in sentance is ="+ count);
+        
+    }
+    
+}
+
+      
+
+    
+
+    
