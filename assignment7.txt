@@ -65,9 +65,12 @@ public class Allpattern {
         int b;
         for(a=1;a<=3;a++){
             char ch=97;
+        for(c=3;c>=a;c--){
+                System.out.print(" ");
+            }
             for(b=1;b<=a;b++)
             {
-                System.out.print(ch);
+                System.out.print(" "+ch);
                 ch++;
             }
             System.out.println();
