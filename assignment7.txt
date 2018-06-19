@@ -89,7 +89,7 @@ program:-
    Scanner ab=new Scanner(System.in);
   System.out.println("enter the second string is:");
    String s2=num.next();
-  if(s1.equals(s2)){
+  if(s1.contains(s2) || s2.contains(s1)){
       System.out.println("the occurance of string");
   }
   else{
