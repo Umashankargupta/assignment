@@ -1,0 +1,23 @@
+Q1.Use the text file abc.txt and write its contents in another file xyz.txt. Print the contents of xyz.txt for varification.
+Program:-
+	
+package make.file;
+import java.io.*;
+
+public class MakeFile {
+
+     
+    public static void main(String[] args) throws IOException {
+     File file1=new File("C:\\Users\\HP\\Desktop\\GUPTA.txt");
+     File file2=new File("C:\\Users\\HP\\Desktop\\umashankar.txt");
+     FileReader in=new FileReader(file1);
+     FileWriter out=new FileWriter(file2);
+     int c;
+     while((c=in.read())!=-1){
+         out.write((char)c);
+     }
+     in.close();
+     out.close();
+    }
+    
+}
